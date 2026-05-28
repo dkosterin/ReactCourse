@@ -18,7 +18,7 @@ function UserForm() {
     },
     {
       login: "user",
-      password: 1234
+      password: "1234"
     }
   ];
 
@@ -31,6 +31,8 @@ function UserForm() {
   let flag = false;
 
   function checkCorrect() {
+    setCorrectLogin(true);
+    setCorrectPassword(true);
     const inputLogin = nameField.current.value;
     const inputPassword = passwordField.current.value;
     let user = null;
