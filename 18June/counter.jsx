@@ -1,12 +1,18 @@
 import React from 'react'
 import './App.css'
 
+/* 
+ Сделать таймер в виде классового компонента: счетчик, кнопка, запускающая
+ таймер
+*/
+
 class Counter extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            count: 0
+            count: 0,
+            diff: 1
         };
     }
 
