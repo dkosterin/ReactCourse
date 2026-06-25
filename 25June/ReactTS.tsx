@@ -1,5 +1,12 @@
 import { useState } from 'react'
 
+/*
+Список задач
+1. Компонент TaskItem выводит название задачи, ..., кнопка "Удалить"
+2. Компонент TaskList выводит списком TaskItem, кнопка "Добавить" с полем для ввода
+3. Заставить кнопки работать
+*/
+
 // Типизация переменных
 let a: number = 5;
 let b: string = "abc";
@@ -68,6 +75,12 @@ function printUser(user: UserProps) {
 }
 
 printUser(someUser);
+
+function operation(a: number, b: number, op: (x: number, y: number) => number): number {
+  return op(a, b);
+}
+
+console.log(operation(2, 3, (x, y) => x + y));
 
 
 // Типизация компонентов и props
