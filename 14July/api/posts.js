@@ -1,4 +1,3 @@
-// https://app.beeceptor.com/virtual-sandbox/json-placeholder
 const URL = "https://json-placeholder.mock.beeceptor.com/posts";
 
 export const fetchPosts = async () => {

@@ -1,7 +1,13 @@
 import PostList from "../components/PostList";
+import AddPostForm from "../components/AddPostForm";
 
 function PostPage() {
-    return <PostList />
+    return (
+        <>
+            <AddPostForm />
+            <PostList />
+        </>
+    )
 }
 
 export default PostPage;

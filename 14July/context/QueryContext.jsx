@@ -8,6 +8,12 @@ export function QueryProvider({children}) {
                 retry: 1, // сколько раз повторяем запрос при ошибке
                 refetchOnWindowFocus: false, // новый запрос при фокусе
                 gcTime: 10 * 60 * 1000 // сколько данные хранятся в кэше
+            },
+            mutations: { // для изменения
+                retry: 0,
+                onError: error => {
+                    console.log(`Error: ${error.message}`);
+                }
             }
         }
     })
